@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Proyecto de los 2000s</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="m-0 min-vh-100 d-flex flex-column bg-body">
+  <div class="custom-frame position-absolute overflow-auto p-3 justify-content-center">
+
+    <nav class="navbar navbar-expand-lg bg-primary text-light border-windows ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-dark" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 bg-secondary" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success " type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="m-3 border border-info border-3 p-3 d-flex flex-column gap-3">
+      <!--Estos 2 divs son un truco que he tenido que hacer para que el carusel se este quieto, el tamaño de las imgs y como funciona bootsrap daba problemas-->
+      <section class="d-flex">
+      <div class="w-25">
+        <div class="w-75 ">
+          <div id="carouselExampleCaptions" class="carousel slide  d-inline-block container w-auto"
+            data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="./assets/images/carousel1.jpg" class="d-block w-auto" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/images/carousel2.jpg" class="d-block w-auto" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/images/carousel3.jpg" class="d-block w-auto" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="fs-1 text-danger bg-black h1">
+                ‹
+              </span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="fs-1 text-danger bg-black h1">
+                ›
+              </span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="w-75 border-1 border-info h-100"><p>ssdadad</p></div>
+    </section>
+    <div class="row justify-content-between g-0">
+
+      <section class="col-8 border border-warning border-2 p-3">
+        <h3>Sección Principal (col-8)</h3>
+        <p>Aquí va tu contenido principal.</p>
+      </section>
+
+      <aside class="col-3 border border-success border-2 p-3">
+        <h4>Aside (col-3)</h4>
+        <p>Barra lateral derecha.</p>
+      </aside>
+
+    </div>
+    </main>
+
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

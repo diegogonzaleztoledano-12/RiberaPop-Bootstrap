@@ -106,3 +106,27 @@ body {
   border: 2px solid red;
   }
 }
+
+
+.custom-frame::-webkit-scrollbar {
+  width: 16px; 
+}
+
+.custom-frame::-webkit-scrollbar-track {
+  background: #d2d3d3;
+  background-image: radial-gradient(#808080 10%, transparent 10%);
+  background-size: 2px 2px;
+}
+
+.custom-frame::-webkit-scrollbar-thumb {
+  background: #d2d3d3;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+}
+
+.custom-frame::-webkit-scrollbar-thumb:active {
+  background: #c0c0c0;
+  border: 1px solid #808080;
+}

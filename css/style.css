@@ -77,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-windows {
   border: 2px solid !important;
-  border-top-color: #ffffff !important;
-  border-left-color: #ffffff !important;
+  border-top-color: #dadada !important;
+  border-left-color: #ebebeb !important;
   border-bottom-color: #808080 !important;
   border-right-color: #808080 !important;
 }
@@ -131,4 +131,14 @@ h1, h2, h3, h4, h5, h6 {
 .custom-frame::-webkit-scrollbar-thumb:active {
   background: #c0c0c0;
   border: 1px solid #808080;
+}
+
+.mi-img{
+  width: 60px;
+  height: 60px;
+}
+
+.containerMain{
+  max-width: 1600px;
+  margin: 0 auto;
 }

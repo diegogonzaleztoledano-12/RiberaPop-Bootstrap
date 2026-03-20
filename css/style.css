@@ -1,5 +1,5 @@
-:root,
-[data-bs-theme=light] {
+/* Fuentes y colores */
+:root{
   --bs-primary: #FF1493;
   --bs-primary-rgb: 255, 20, 147;
   --bs-secondary: #E0BBE4;
@@ -19,8 +19,6 @@
   --bs-primary-bg-subtle-rgb: 210, 211, 211; 
   --bs-primary-text-emphasis: #8B008B;
   --bs-primary-border-subtle: #FF69B4;
-  --bs-font-sans-serif: "Comic Sans MS", "Verdana", "Arial", sans-serif;
-  --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-bg: #fdd1f0;
   --bs-body-bg-rgb: 253, 209, 240;
   --bs-body-color: #4B0082;
@@ -36,10 +34,21 @@
   --bs-focus-ring-color: rgba(255, 20, 147, 0.25);
 }
 
+body {
+  background: no-repeat center top fixed;
+  background-image: url('../assets/images/bg768.png');
+  background-size: 100% 100%;
+  font-family: "Comic Sans MS", Verdana, Arial, sans-serif;
+  color: var(--bs-body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Seymour One', "MS Sans Serif", Tahoma, Verdana, sans-serif;
+}
+
 .btn, .card, .progress, .progress-bar, .form-control, .list-group-item {
   border-radius: 0 !important;
 }
-
 .btn {
   background-color: var(--bs-light) !important;
   color: black !important;
@@ -48,7 +57,7 @@
   border-bottom: 2px solid #808080 !important;
   border-right: 2px solid #808080 !important;
   padding: 4px 10px !important;
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'VT323', "MS Sans Serif", Tahoma, Verdana, sans-serif;
 }
 
 .btn-primary { background-color: var(--bs-primary) !important; color: white !important; }
@@ -72,13 +81,6 @@
   border-left-color: #ffffff !important;
   border-bottom-color: #808080 !important;
   border-right-color: #808080 !important;
-}
-
-body {
-  background: no-repeat center top fixed;
-  background-image: url('../assets/images/bg768.png');
-  background-size: 100% 100%;
-  
 }
 
 .custom-frame {
@@ -105,4 +107,28 @@ body {
   height: 81.5vh;
   border: 2px solid red;
   }
+}
+
+
+.custom-frame::-webkit-scrollbar {
+  width: 16px; 
+}
+
+.custom-frame::-webkit-scrollbar-track {
+  background: #d2d3d3;
+  background-image: radial-gradient(#808080 10%, transparent 10%);
+  background-size: 2px 2px;
+}
+
+.custom-frame::-webkit-scrollbar-thumb {
+  background: #d2d3d3;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+}
+
+.custom-frame::-webkit-scrollbar-thumb:active {
+  background: #c0c0c0;
+  border: 1px solid #808080;
 }

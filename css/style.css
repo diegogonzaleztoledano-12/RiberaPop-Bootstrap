@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0.22%;
   width: 95.6vw;
   height: 80.4vh;
-  border: 2px solid red;
 }
 @media (min-width: 768px) {
    body { background-image: url('../assets/images/bg1024.png'); } 
@@ -96,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0.52%;
   width: 97.6vw;
   height: 80vh;
-  border: 2px solid red;
   }
 }
 @media (min-width: 1200px) { body { background-image: url('../assets/images/bgriberapop.png'); } 
@@ -105,7 +103,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0.22%;
   width: 98.6vw;
   height: 81.5vh;
-  border: 2px solid red;
   }
 }
 
@@ -135,10 +132,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .mi-img{
   width: 60px;
-  height: 60px;
+
 }
 
 .containerMain{
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.gif1{
+  width: 120px;
+  transform: translate(-23%, -55%) rotate(-30deg);
+}
+
+.gif2{
+  width: 110px;
+  transform: translate(-80%,-50%) rotate(20deg);
 }

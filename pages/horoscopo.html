@@ -34,7 +34,11 @@
                                     href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark text-decoration-underline" href="./blog.html">Blog</a>
+                                <a class="nav-link text-dark" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark text-decoration-underline"
+                                    href="./horoscopo.html">Horóscopo</a>
                             </li>
                         </ul>
                         <div class="d-flex justify-content-center align-content-center">
@@ -45,7 +49,211 @@
                 </div>
             </nav>
 
-            <main class="mt-3 border border-end border-1  d-flex flex-column border-windows  ">
+           <main class="mt-3 border border-end border-1  d-flex flex-column border-windows  ">
+                <!--textos-->
+                <section class="d-flex flex-column align-items-center gap-3 p-3">
+                    <h2>✨ HoroscoPop ✨</h2>
+                    <p>¡Bienvenida a tu sección favorita! Los astros se han alineado para contarte todos los salseos que te esperan esta semana. ¿Habrá suerte con tu 'crush' o toca drama con las populares? ¡Descúbrelo ya!</p>
+
+                    <p class="d-inline-flex gap-1">
+                        No salgas de casa sin leer lo que el cosmos tiene preparado para ti. Desde los exámenes hasta ese mensaje de WhatsApp que no llega, aquí tienes la guía definitiva para sobrevivir a la semana con mucho estilo.
+                        ¡Es hora de brillar y dejar que las estrellas guíen tu destino pop!
+                    </p>
+                    <!--collapse-->
+                    <div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        💖 Tu amuleto de la suerte 💖
+                    </button>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body border-windows-pink">
+                            Tu número de la suerte esta semana es el 7 y tu color el rosa chicle. Lleva algo brillante en el pelo para atraer las buenas vibras y que ese chico especial por fin se fije en ti. ¡Funciona!
+                        </div>
+                    </div>
+                    <h3>🔥 Ranking Semanal 🔥</h3>
+                    <p>¿Quién estará en la cima del zodiaco? Mira qué signos tendrán un flechazo total esta semana.</p>
+
+                </section>
+                <!--Horoscopo dropdown-->
+                <section class="accordion w-75 align-self-center " id="accordionZodiaco">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAries" aria-expanded="true" aria-controls="collapseAries">
+                                ♈ Aries
+                            </button>
+                        </h2>
+                        <div id="collapseAries" class="accordion-collapse collapse show "
+                            data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Aries (21 marzo - 19 abril):</strong> ¡Esa energía te sale por los poros! Esta semana serás la reina de la pista. Un mensaje inesperado de tu 'ex-mejor amiga' podría cambiar tus planes del viernes. ¡No te cortes y di lo que piensas!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTauro" aria-expanded="false" aria-controls="collapseTauro">
+                                ♉ Tauro
+                            </button>
+                        </h2>
+                        <div id="collapseTauro" class="accordion-collapse collapse" data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Tauro (20 abril - 20 mayo):</strong> Relax, chica. Los estudios te tienen un poco estresada, pero el finde llega con una sorpresa en forma de regalo. Ojo con los gastos, ¡no te gastes toda la paga en gloss de labios!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseGeminis" aria-expanded="false" aria-controls="collapseGeminis">
+                                ♊ Géminis
+                            </button>
+                        </h2>
+                        <div id="collapseGeminis" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Géminis (21 mayo - 20 junio):</strong> Tu doble personalidad está a tope. Por un lado quieres fiesta y por otro manta y peli. Decídete pronto o te perderás el salseo del siglo en el cumple de tu compañera.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCancer" aria-expanded="false" aria-controls="collapseCancer">
+                                ♋ Cáncer
+                            </button>
+                        </h2>
+                        <div id="collapseCancer" class="accordion-collapse collapse" data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Cáncer (21 junio - 22 julio):</strong> Estás súper sensible, pero eso te hace especial. Tu 'crush' podría pedirte los apuntes... ¡es la excusa perfecta para hablarle! Mantén la calma y luce tu mejor sonrisa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLeo" aria-expanded="false" aria-controls="collapseLeo">
+                                ♌ Leo
+                            </button>
+                        </h2>
+                        <div id="collapseLeo" class="accordion-collapse collapse" data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Leo (23 julio - 22 agosto):</strong> ¡Protagonismo total! Eres el centro de todas las miradas y te encanta. Pero cuidado, no ignores a tus mejores amigas por irte con los populares. La lealtad es lo primero.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseVirgo" aria-expanded="false" aria-controls="collapseVirgo">
+                                ♍ Virgo
+                            </button>
+                        </h2>
+                        <div id="collapseVirgo" class="accordion-collapse collapse" data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Virgo (23 agosto - 22 septiembre):</strong> Todo bajo control, como siempre. Has organizado el trabajo en grupo de maravilla, pero deja que los demás también opinen. Un chico de otra clase no te quita el ojo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLibra" aria-expanded="false" aria-controls="collapseLibra">
+                                ♎ Libra
+                            </button>
+                        </h2>
+                        <div id="collapseLibra" class="accordion-collapse collapse" data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Libra (23 septiembre - 22 octubre):</strong> El equilibrio es tu lema, pero esta semana un dilema amoroso te va a volver loca. ¿El chico skater o el chico de la biblioteca? Sigue a tu corazón, no fallarás.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEscorpio" aria-expanded="false"
+                                aria-controls="collapseEscorpio">
+                                ♏ Escorpio
+                            </button>
+                        </h2>
+                        <div id="collapseEscorpio" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Escorpio (23 octubre - 21 noviembre):</strong> Misteriosa y magnética. Tienes un secreto que te quema, ¡cuéntaselo a tu BFF antes de explotar! El miércoles será tu día de suerte en los exámenes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSagitario" aria-expanded="false"
+                                aria-controls="collapseSagitario">
+                                ♐ Sagitario
+                            </button>
+                        </h2>
+                        <div id="collapseSagitario" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Sagitario (22 noviembre - 21 diciembre):</strong> ¡Ganas de aventura! Te mueres por hacer ese viaje con tus amigas. Empieza a ahorrar ya. En el amor, alguien del pasado podría reaparecer en tu Instagram.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCapricornio" aria-expanded="false"
+                                aria-controls="collapseCapricornio">
+                                ♑ Capricornio
+                            </button>
+                        </h2>
+                        <div id="collapseCapricornio" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Capricornio (22 diciembre - 19 enero):</strong> Eres la más responsable, pero ¡suéltate el pelo! No todo es estudiar. El jueves conocerás a alguien que comparte tus gustos musicales súper raros.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAcuario" aria-expanded="false" aria-controls="collapseAcuario">
+                                ♒ Acuario
+                            </button>
+                        </h2>
+                        <div id="collapseAcuario" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Acuario (20 enero - 18 febrero):</strong> Tu originalidad es tu superpoder. Esta semana crearás tendencia con ese nuevo look que tienes pensado. Alguien te pedirá consejo sobre un tema muy serio de amor.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePiscis" aria-expanded="false" aria-controls="collapsePiscis">
+                                ♓ Piscis
+                            </button>
+                        </h2>
+                        <div id="collapsePiscis" class="accordion-collapse collapse" data-bs-parent="#accordionZodiaco">
+                            <div class="accordion-body">
+                                <strong>Piscis (19 febrero - 20 marzo):</strong> Estás en las nubes soñando con imposibles. Aterriza un poco porque alguien muy real está intentando llamar tu atención. ¡Abre bien los ojos en el recreo!
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </div>

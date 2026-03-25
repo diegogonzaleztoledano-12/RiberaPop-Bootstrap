@@ -136,6 +136,21 @@ h6 {
   border-right-color: var(--bs-secondary) !important;
 }
 
+.accordion-item {
+    --bs-accordion-btn-bg: var(--bs-secondary);
+    --bs-accordion-btn-color: #fff;
+    --bs-accordion-active-bg: var(--bs-primary);
+
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
 .textarea-scroll::-webkit-scrollbar {
   width: 12px;
 }
@@ -254,7 +269,7 @@ Marco/imagen de fondo
   color: var(--bs-primary-text-emphasis) !important;
 }
 
-.img-lamejor{
+.img-lamejor {
   width: 136px;
   height: 50px;
   object-fit: cover;
@@ -263,8 +278,8 @@ Marco/imagen de fondo
 
 
 @media (min-width: 992px) {
-    .position-sticky-mio {
-        position: sticky;
-        top: 0;
-    }
+  .position-sticky-mio {
+    position: sticky;
+    top: 0;
+  }
 }

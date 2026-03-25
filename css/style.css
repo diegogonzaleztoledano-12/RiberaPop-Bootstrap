@@ -31,6 +31,7 @@
   --bs-link-color: #0000FF;
   --bs-link-hover-color: #FF1493;
   --bs-focus-ring-color: rgba(255, 20, 147, 0.25);
+
 }
 
 body {
@@ -51,6 +52,12 @@ h6 {
 }
 
 
+.table-secondary,
+.table-secondary td,
+.table-secondary th {
+  background-color: #f3cdf7 !important;
+  color: var(--bs-emphasis-color);
+}
 
 .btn {
   background-color: var(--bs-light) !important;
@@ -61,6 +68,23 @@ h6 {
   border-right: 2px solid #808080 !important;
   padding: 4px 10px !important;
   font-family: 'VT323', "MS Sans Serif", Tahoma, Verdana, sans-serif;
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary-text-emphasis) !important;
+}
+
+.form-check-input:focus {
+  border-color: var(--bs-primary) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color) !important;
+}
+
+.form-check-input {
+  border-radius: 0px !important;
+  border: 2px solid var(--bs-border-color) !important;
+  background-color: #ffffff;
 }
 
 .btn-primary {
@@ -110,6 +134,28 @@ h6 {
   border-left-color: #ebebeb !important;
   border-bottom-color: var(--bs-secondary) !important;
   border-right-color: var(--bs-secondary) !important;
+}
+
+.textarea-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.textarea-scroll::-webkit-scrollbar-track {
+  background: #d2d3d3;
+  background-size: 2px 2px;
+}
+
+.textarea-scroll::-webkit-scrollbar-thumb {
+  background: #d2d3d3;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+}
+
+.textarea-scroll::-webkit-scrollbar-thumb:active {
+  background: #c0c0c0;
+  border: 1px solid #808080;
 }
 
 /*
@@ -172,6 +218,9 @@ Marco/imagen de fondo
 }
 
 
+
+
+
 /*
   Mis clases css
 */
@@ -201,6 +250,21 @@ Marco/imagen de fondo
   background-size: 25%;
 }
 
-.link:hover{
+.link:hover {
   color: var(--bs-primary-text-emphasis) !important;
+}
+
+.img-lamejor{
+  width: 136px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+
+@media (min-width: 992px) {
+    .position-sticky-mio {
+        position: sticky;
+        top: 0;
+    }
 }
